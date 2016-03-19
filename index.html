@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SoberStats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+        <img src="/soberstats/img/money.svg" alt="Piggy Bank">
+        <div class="logo">SoberStats</div>
+        <div class="tagline">How much money have you saved? </div>
+    </header>
+    <main>
+        <div id="p0">
+            <h1>Find out your SoberStats!</h1>
+            <p>So you quit drinking. Congratulations!
+                <br> Let's find out how much money you've saved.</p>
+            <div class="container">
+                <div class="header">
+                    <button id="mainButton" type="button">Ready?</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="p1" class="questions">
+            <div id="q1">
+                <label for="lastDrink">When did you have your last drink:</label>
+                <input type="text" id="lastDrink" name="lastDrink">
+            </div>
+            <div id="q2">
+                <label for="firstDrink">When did you start drinking daily:</label>
+                <input type="text" id="firstDrink" name="firstDrink">
+                <p>You probably won't have an exact date, but just estimate as accurately as you can.</p>
+            </div>
+            <button id="b1" type="button">Go on</button>
+        </div>
+        <div class="t">
+            <label for="todaysDate">Today's Date:</label>
+            <input id="todaysDate" name="drinkingDays" disabled> </div>
+        <div id="p5" class="results">
+            <div id="d1">
+                <label for="drinkingDays">Number of days you drank:</label>
+                <input id="drinkingDays" name="drinkingDays" disabled> </div>
+            <button id="b5" type="button">Go on</button>
+        </div>
+        <div id="p7" class="results">
+            <div id="d2">
+                <label for="daysSinceQuit">Number of days since you stopped:</label>
+                <input id="daysSinceQuit" name="daysSinceQuit" disabled> </div>
+            <button id="b7" type="button">Go on</button>
+        </div>
+        <div id="p2" class="questions">
+            <p>How much did you drink on a given day?</p>
+            <p>If every day was different, what would the average day have been?</p>
+            <div id="q3">
+                <label for="beer">Beer 330ml (1.4 standard drinks)</label>
+                <select name="beer" id="beer">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                </select>
+            </div>
+            <div id="q4">
+                <label for="wine">Wine 250ml (2.6 standard drinks)</label>
+                <select name="wine" id="wine">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </select>
+            </div>
+            <div id="q5">
+                <label for="spirits">Spirits 60ml (2 standard drinks)</label>
+                <select name="spirits" id="spirits">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                </select>
+            </div>
+            <button id="b2" type="button">Go on</button>
+        </div>
+        <div id="standard" class="results">
+            <div id="d3">
+                <label for="standardDrinks">Standard Drinks</label>
+                <input id="standardDrinks" name="standardDrinks" disabled>
+            </div>
+        </div>
+        <div id="p3" class="questions">
+            How much did you spend each day? <br> My calculation says you spent
+            <div><label for="averageCostCalc">$</label><input type="text" id="averageCostCalc" name="averageCostCalc"></div>
+<p>Enter how much you would spend on average below.</p>
+            <div id="q6">
+                <label for="averageCost">On average</label> $
+                <input type="number" id="averageCost" name="averageCost">
+            </div>
+            <button id="b3" type="button">Go on</button>
+        </div>
+
+        <div id="p4" class="questions">
+            <p>Ready to find out?</p>
+            <button id="b4" type="button">Tell Me!</button>
+        </div>
+        
+        <div id="p6" class="results">
+            <div id="d4">
+                <label for="moneySpent">You Spent Approximately $</label>
+                <input id="moneySpent" name="moneySpent" disabled>
+            </div>
+            <button id="b6" type="button">Go on</button>
+        </div>
+
+        <div id="p8" class="results">
+            <div id="d5">
+                <label for="moneySaved">You have already saved $</label>
+                <input id="moneySaved" name="moneySaved" disabled>
+            </div>
+            <button id="b8" type="button">Go On</button>
+        </div>
+
+        <div id="p9" class="results">
+            <p>Continue on this path, and you'll save:</p>
+            <div id="d6">
+                <label for="sixMonths">Six Months $</label>
+                <input id="sixMonths" name="sixMonths" disabled>
+            </div>
+            <div id="d7">
+                <label for="oneYear">One Year $</label>
+                <input id="oneYear" name="oneYear" disabled>
+            </div>
+            <div id="d8">
+                <label for="fiveYears">Five Years $</label>
+                <input id="fiveYears" name="fiveYears" disabled>
+            </div>
+            <div id="d9">
+                <label for="tenYears">Ten Years $</label>
+                <input id="tenYears" name="tenYears" disabled>
+            </div>
+            <div id="d10">
+                <label for="twentyYears">Twenty Years $</label>
+                <input id="twentyYears" name="twentyYears" disabled>
+            </div>
+            <p>This doesn't even take interest into account!</p>
+            <button id="b9" type="button">Go On</button>
+        </div>
+
+        <div id="p10" class="results">
+            <p>That is a lot of money</p>
+            <p>Happy with your decision?</p>
+            <p>For extra support, visit <a href="http://www.reddit.com/r/stopdrinking">/r/StopDrinking</a> on Reddit.</p>
+            <button id="b10" type="button">Start Again</button>
+        </div>
+    </main>
+    <footer>
+        <p>SoberStats 2016</p>
+        <ul>
+            <li>
+                <a href="www.facebook.com/soberstats"><img src="/soberstats/img/facebook.svg" alt="Facebook Icon"></a>
+            </li>
+            <li>
+                <a href="www.twitter.com/soberstats"><img src="/soberstats/img/twitter.svg" alt="Twitter Icon"></a>
+            </li>
+            <li>
+                <a href="www.reddit.com/r/stopdrinking"><img src="/soberstats/img/reddit.svg" alt="Reddit Icon"></a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics - Will do later: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+-->
+</body>
+
+</html>
