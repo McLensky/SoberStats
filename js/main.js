@@ -1,5 +1,6 @@
 //Document Ready
 $(document).ready(function () {
+
     //Date Pickers 
     $(function () {
         $("#lastDrink").datepicker({
@@ -15,6 +16,7 @@ $(document).ready(function () {
         }).datepicker("setDate", "0");
     });
 
+    
     //Main Page Animations
     $('#mainButton').click(function () {
         $('#p0').fadeOut(500, function () {
