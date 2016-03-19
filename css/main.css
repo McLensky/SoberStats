@@ -378,7 +378,7 @@ button:active {
     }
     
     .logo {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     footer img {
@@ -396,8 +396,8 @@ button:active {
         
     label,
     p {
-        font-size: 1.5em;
-        margin-bottom: 1.5em;
+        font-size: 1.25em;
+        margin-bottom: 1.25em;
     }
 
     .questions,
