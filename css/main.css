@@ -166,7 +166,7 @@ header img {
 
 
 footer img {
-    max-height: 1.5em;
+    max-height: 1em;
     padding: 0 1em;
     margin: 0;
 }
@@ -375,11 +375,6 @@ button:active {
     
     .logo {
         font-size: 3em;
-    }
-
-    footer img {
-        max-height: 1.5em;
-        padding: 0 2em;
     }
     
     footer p {
