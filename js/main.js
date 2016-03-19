@@ -1,5 +1,19 @@
 //Document Ready
 $(document).ready(function () {
+    //Date Pickers 
+    $(function () {
+        $("#lastDrink").datepicker({
+            dateFormat: 'dd-mm-yy'
+        });
+        $("#firstDrink").datepicker({
+            dateFormat: 'dd-mm-yy'
+        });
+
+        // Get Current Date        
+        $("#todaysDate").datepicker({
+            dateFormat: "dd-mm-yy"
+        }).datepicker("setDate", "0");
+    });
 
     //Main Page Animations
     $('#mainButton').click(function () {
