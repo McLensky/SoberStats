@@ -1,6 +1,7 @@
 //Document Ready
 $(document).ready(function () {
     //Date Pickers 
+    if(window.innerWidth > 568){
     $(function () {
         $("#lastDrink").datepicker({
             dateFormat: 'dd-mm-yy'
@@ -13,7 +14,8 @@ $(document).ready(function () {
         $("#todaysDate").datepicker({
             dateFormat: "dd-mm-yy"
         }).datepicker("setDate", "0");
-    });
+    }
+    )};
 
     //Main Page Animations
     $('#mainButton').click(function () {
