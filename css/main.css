@@ -140,7 +140,6 @@ main {
     padding: none;
     margin: none;
     overflow: hidden;
-    display: flex;
 }
 
 footer {
@@ -276,9 +275,8 @@ button:active {
 #p0 {
     padding: 15% 5%;
     background: rgba(255, 255, 255, 0.8);
-    min-height: 100%;
+    height: 100%;
     color: black;
-    display: stretch;
 }
 
 /* ==========================================================================
