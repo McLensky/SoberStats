@@ -148,7 +148,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     margin: 0;
 }
 
@@ -368,14 +368,6 @@ button:active {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
-    header {
-        max-height: 15em;
-    }
-    
-    footer {
-        max-height: 5em;
-    }
     
     .logo {
         font-size: 3em;
