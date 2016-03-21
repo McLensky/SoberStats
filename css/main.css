@@ -369,6 +369,14 @@ button:active {
 
 @media only screen and (min-width: 35em) {
     
+    header {
+        height: 35vh;
+    }
+    
+    main {
+        height: 55vh;
+    }
+    
     .logo {
         font-size: 3em;
     }
