@@ -366,6 +366,14 @@ button:active {
 
 @media only screen and (min-width: 35em) {
 
+    heading {
+        min-height: 15em;
+    }
+    
+    fooder {
+        min-height: 5em;
+    }
+    
     .logo {
         font-size: 3em;
     }
