@@ -134,6 +134,7 @@ header {
 main {
     background-image: url("/soberstats//img/pub.jpg");
     background-size: cover;
+    min-height: 100%
     padding: none;
     margin: none;
 }
