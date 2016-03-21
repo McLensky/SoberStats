@@ -19,6 +19,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-weight: 500;
+    height: 100%;
 }
 
 
@@ -124,6 +125,7 @@ body {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 header {
