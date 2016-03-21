@@ -149,7 +149,7 @@ footer {
 }
 
 header img {
-    max-height: 50%;
+    max-height: 5em;
 }
 
 .logo,
@@ -371,7 +371,7 @@ button:active {
     }
     
     footer {
-        max-height:  -height: 5em;
+        max-height: 5em;
     }
     
     .logo {
