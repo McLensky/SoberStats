@@ -128,11 +128,10 @@ body {
 
 header {
     background-image: url("/soberstats//img/background-texture.jpg");
-    height: 30vh;
+    max-height: 10em; 
 }
 
 main {
-    height: 60vh;
     background-image: url("/soberstats//img/pub.jpg");
     background-size: cover;
     padding: none;
@@ -145,7 +144,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 10vh;
+    max-height: 4em;
     margin: 0;
 }
 
