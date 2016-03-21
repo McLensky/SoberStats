@@ -89,7 +89,7 @@ $(document).ready(function () {
         var today = $('#todaysDate').datepicker('getDate');
         var end = $('#lastDrink').datepicker('getDate');
         var daysSinceQuit = Math.round((today - end) / 1000 / 60 / 60 / 24);
-        $('#daysSinceQuit').val(daysSinceQuit);
+        $('#daysSinceQuit').text(daysSinceQuit);
     });
 
     //Days Drank Calc
@@ -97,7 +97,7 @@ $(document).ready(function () {
         var start = $('#firstDrink').datepicker('getDate');
         var end = $('#lastDrink').datepicker('getDate');
         var drinkingDays = Math.round((end - start) / 1000 / 60 / 60 / 24);
-        $('#drinkingDays').val(drinkingDays);
+        $('#drinkingDays').html(drinkingDays);
     });
 
 
