@@ -139,6 +139,7 @@ main {
     max-height: 100%;
     padding: none;
     margin: none;
+    overflow: hidden;
 }
 
 footer {
