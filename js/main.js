@@ -121,7 +121,7 @@ $(document).ready(function () {
         // ASK ALBERT OR AVIEL HOW TO MANUALLY OVERRIDE THIS
         averageCostCalc = ((beer * 2.5) + (wine * 3) + (spirits * 3));
         averageCostCalc.toFixed(2);
-        $('#averageCostCalc').val(averageCostCalc);
+        $('#averageCostCalc').text(averageCostCalc);
 
 
 
@@ -136,37 +136,37 @@ $(document).ready(function () {
             //Calc for money spent
             moneySpent = (averageCost * drinkingDays);
             moneySpent.toFixed(2);
-            $('#moneySpent').val(moneySpent);
+            $('#moneySpent').text(moneySpent);
 
             //Calc for money saved
             moneySaved = (averageCost * daysSinceQuit);
             moneySaved.toFixed(2);
-            $('#moneySaved').val(moneySaved);
+            $('#moneySaved').text(moneySaved);
 
             //6 Months
             sixMonths = (averageCost * 180);
             sixMonths.toFixed(2);
-            $('#sixMonths').val(sixMonths);
+            $('#sixMonths').text(sixMonths);
 
             //One Year
             oneYear = (averageCost * 365);
             oneYear.toFixed(2);
-            $('#oneYear').val(oneYear);
+            $('#oneYear').text(oneYear);
 
             //Five Years
             fiveYears = (averageCost * 730);
             fiveYears.toFixed(2);
-            $('#fiveYears').val(fiveYears);
+            $('#fiveYears').text(fiveYears);
 
             //Ten Years
             tenYears = (averageCost * 3650);
             tenYears.toFixed(2);
-            $('#tenYears').val(tenYears);
+            $('#tenYears').text(tenYears);
 
             //Twenty Years
             twentyYears = (averageCost * 7300);
             twentyYears.toFixed(2);
-            $('#twentyYears').val(twentyYears);
+            $('#twentyYears').text(twentyYears);
 
         });
     });
