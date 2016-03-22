@@ -90,7 +90,7 @@ $(document).ready(function () {
         var end = $('#lastDrink').datepicker('getDate');
         var daysSinceQuit = Math.round((today - end) / 1000 / 60 / 60 / 24);
         $('#daysSinceQuit').text(daysSinceQuit);
-        
+
     });
 
     //Days Drank Calc
@@ -130,17 +130,17 @@ $(document).ready(function () {
         // Just put cals in again
         $("#b3").click(function () {
             var averageCost = $('#averageCost').val();
-           
+
             var start = $('#firstDrink').datepicker('getDate');
             var end = $('#lastDrink').datepicker('getDate');
             var drinkingDays = Math.round((end - start) / 1000 / 60 / 60 / 24);
             $('#drinkingDays').val(drinkingDays);
-            
+
             var today = $('#todaysDate').datepicker('getDate');
             var end = $('#lastDrink').datepicker('getDate');
             var daysSinceQuit = Math.round((today - end) / 1000 / 60 / 60 / 24);
             $('#daysSinceQuit').val(daysSinceQuit);
-            
+
             //Calc for money spent
             moneySpent = (averageCost * drinkingDays);
             moneySpent.toFixed(2);
@@ -152,7 +152,7 @@ $(document).ready(function () {
             $('#moneySaved').text(moneySaved);
         });
 
-        
+
         //Length of time cost
         $("#b4").click(function () {
             var sixMonths = 0;
@@ -165,7 +165,7 @@ $(document).ready(function () {
             var moneySaved = $('#moneySaved').val();
             var drinkingDays = $('#drinkingDays').val();
             var daysSinceQuit = $('#daysSinceQuit').val();
-            
+
             //6 Months
             sixMonths = (averageCost * 180);
             sixMonths.toFixed(2);
