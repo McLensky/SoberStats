@@ -127,6 +127,7 @@ $(document).ready(function () {
 
 
         //Average Cost Calc
+        // Just put cals in again
         $("#b3").click(function () {
             var averageCost = $('#averageCost').val();
            
