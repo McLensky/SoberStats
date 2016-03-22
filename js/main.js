@@ -16,7 +16,7 @@ $(document).ready(function () {
         }).datepicker("setDate", "0");
     });
 
-    
+
     //Main Page Animations
     $('#mainButton').click(function () {
         $('#p0').fadeOut(500, function () {
@@ -127,12 +127,11 @@ $(document).ready(function () {
 
         //Average Cost Calc
         $("#b3").click(function () {
-            var sixMonths = 0;
-            var oneYear = 0;
-            var fiveYears = 0;
-            var tenYears = 0;
-            var twentyYears = 0;
             var averageCost = $('#averageCost').val();
+
+            var daysSinceQuit = $('#daysSinceQuit').val();
+
+            //var drinkingDays = $('#drinkingDays').val();
             //Calc for money spent
             moneySpent = (averageCost * drinkingDays);
             moneySpent.toFixed(2);
@@ -142,6 +141,18 @@ $(document).ready(function () {
             moneySaved = (averageCost * daysSinceQuit);
             moneySaved.toFixed(2);
             $('#moneySaved').text(moneySaved);
+        });
+
+        //Length of time cost
+        $("#b4").click(function () {
+            var sixMonths = 0;
+            var oneYear = 0;
+            var fiveYears = 0;
+            var tenYears = 0;
+            var twentyYears = 0;
+            var averageCost = $('#averageCost').val();
+            var moneySpent = $('#moneySpent').val();
+            var moneySaved = $('#moneySaved').val();
 
             //6 Months
             sixMonths = (averageCost * 180);
