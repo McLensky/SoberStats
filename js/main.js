@@ -5,6 +5,7 @@ $(document).ready(function () {
     $(function () {
         $("#lastDrink").datepicker({
             dateFormat: 'dd-mm-yy'
+            
         });
         $("#firstDrink").datepicker({
             dateFormat: 'dd-mm-yy'
